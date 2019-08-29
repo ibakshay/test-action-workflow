@@ -9,7 +9,7 @@ jobs:
     - uses: actions/checkout@v1
       
     - name: "TEST ACTION"
-     # if: github.event.action == 'closed' || github.event.action == 'opened'
+      if: github.event.action == 'closed' || github.event.action == 'opened'
       uses: ibakshay/action-template@dev-release
       with: 
         mytoken: ${{ secrets.GITHUB_TOKEN }}
