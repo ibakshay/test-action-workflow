@@ -1,0 +1,15 @@
+name: "Issue Created"
+on:
+  issues:
+
+jobs:
+  issue_created:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      
+    - name: "TEST ACTION"
+      if: github.event.action == 'closed' || github.event.action == 'opened'
+      uses: ibakshay/action-template@dev-release
+      with: 
+        mytoken: ${{ secrets.GITHUB_TOKEN }}
