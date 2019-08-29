@@ -1,6 +1,6 @@
 name: "Issue Created"
 on:
-  issues:
+  pull_request:
 
 jobs:
   issue_created:
