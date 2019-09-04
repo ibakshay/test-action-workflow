@@ -1,8 +1,1 @@
- { "contributors": [
-   { "name": "akshayib", "id": 51237873 },
-  { "name": "ibakshay", "id": 33329946 },
-   { "name": "tintin", "id": 638643 },
-  { "name": "napnap", "id": 285784 },
-   { "name": "Taj", "id": 535856 },
-   { "name": "Pan", "id": 46854 }
-]}
+" { \"contributors\": [\n   { \"name\": \"akshayib\", \"id\": 51237873 },\n  { \"name\": \"ibakshay\", \"id\": 33329946 },\n   { \"name\": \"tintin\", \"id\": 638643 },\n  { \"name\": \"napnap\", \"id\": 285784 },\n   { \"name\": \"Taj\", \"id\": 535856 },\n   { \"name\": \"Pan\", \"id\": 46854 }\n]}\n"
