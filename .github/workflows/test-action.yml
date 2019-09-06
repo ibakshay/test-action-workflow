@@ -15,5 +15,5 @@ jobs:
     - name: "TEST ACTION"
       if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
-      with: 
-        mytoken: ${{ secrets.GITHUB_TOKEN }}
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
