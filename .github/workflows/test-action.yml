@@ -17,3 +17,6 @@ jobs:
       uses: ibakshay/action-template@dev-release
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+       with: 
+        pathtocla: 'cla.json'
+        branch: 'master'
