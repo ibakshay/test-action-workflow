@@ -2,10 +2,7 @@
 name: "CLA Assistant"
 on:
   pull_request:
-    branches: 
-    - master
     
-
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
