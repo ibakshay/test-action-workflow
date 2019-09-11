@@ -1,7 +1,7 @@
 
 name: "CLA Assistant"
 on:
-  pull_request:
+  issues:
     
 jobs:
   CLAssistant:
@@ -11,7 +11,7 @@ jobs:
       
     - name: "TEST ACTION"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
-      uses: ibakshay/action-template@dev-release
+      uses: ibakshay/action-template@mongodb-connect
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
