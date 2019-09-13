@@ -17,4 +17,4 @@ jobs:
       with: 
        # pathtocla: 'cla.json'
         #branch: 'master'
-       repo-token: {{ secrets.GITHUB_TOKEN }} 
+       repo-token: ${{ secrets.GITHUB_TOKEN }} 
