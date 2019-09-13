@@ -11,9 +11,10 @@ jobs:
       
     - name: "TEST ACTION"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
-      uses: ibakshay/action-template@dev
+      uses: damccorm/issue-greeter@master
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
-        pathtocla: 'cla.json'
-        branch: 'master'
+       # pathtocla: 'cla.json'
+        #branch: 'master'
+       repo-token: {{ secrets.GITHUB_TOKEN }} 
