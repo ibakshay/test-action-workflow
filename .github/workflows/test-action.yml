@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       
-    - name: "TEST ACTION"
+    - name: "Issue Greeter"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: damccorm/issue-greeter@master
       env: 
