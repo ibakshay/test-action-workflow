@@ -15,5 +15,5 @@ jobs:
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
-        pathtocla: 'cla.json'
+        pathtocla: 'signatures/cla.json'
         branch: 'master'
