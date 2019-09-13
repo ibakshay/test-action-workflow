@@ -1,7 +1,7 @@
 
 name: "CLA Assistant"
 on:
-  issues:
+  pull_request:
     
 jobs:
   CLAssistant:
@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       
-    - name: "Issue Greeter"
+    - name: "CLA Assistant"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
       env: 
