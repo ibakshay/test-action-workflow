@@ -13,7 +13,8 @@ jobs:
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
       env: 
-        GITHUB_TOKENS: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
       with: 
         pathtocla: 'signatures/cla.json'
         branch: 'master'
