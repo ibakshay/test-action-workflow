@@ -12,8 +12,8 @@ jobs:
     - name: "CLA Assistant"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+     # env: 
+    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
         pathtocla: 'signatures/cla.json'
         branch: 'master'
