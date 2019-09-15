@@ -14,7 +14,8 @@ jobs:
       uses: ibakshay/action-template@dev-release
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
       with: 
-        pathtocla: 'signatures/cla.json'
+        pathToClaSignatures: 'signatures/cla.json'
         branch: 'master'
 
