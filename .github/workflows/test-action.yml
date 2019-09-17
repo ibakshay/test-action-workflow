@@ -16,6 +16,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
       with: 
-        pathToClaSignatures: 'signatures/cla.json'
+        pathToClaSignatures: 'cla-assistant/cla.json'
         branch: 'master'
 
