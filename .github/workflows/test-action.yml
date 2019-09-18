@@ -16,7 +16,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
       with: 
-        pathToClaSignatures: 'cla-assistant/cla.json'
+        pathToClaSignatures: 'signatures/cla.json'
         pathToCLADocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
 
