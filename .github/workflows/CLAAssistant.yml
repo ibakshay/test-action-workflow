@@ -2,12 +2,13 @@
 name: "CLA Assistant"
 on:
   pull_request:
+    types: [opened,synchronize]
     
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1 
+  #  - uses: actions/checkout@v1 
     - name: "CLA Assistant"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@dev-release
