@@ -2,6 +2,7 @@
 name: "CLA Assistant"
 on:
   pull_request:
+    types: [opened,synchronize]
     
 jobs:
   CLAssistant:
