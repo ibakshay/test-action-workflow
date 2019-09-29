@@ -16,4 +16,4 @@ jobs:
         git remote set-url origin git@github.com:ibakshay/test-action-workflow.git
         git checkout release
         git rebase $GITHUB_SHA
-        git push 
+        git push origin release
