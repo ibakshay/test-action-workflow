@@ -17,4 +17,5 @@ jobs:
         git fetch
         git rebase $GITHUB_SHA
         git push https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY
-        git fetch && git log -${1:-25} --all --graph --decorate --abbrev-commit --pretty=oneline
+        git fetch
+        git log -${1:-25} --all --graph --decorate --abbrev-commit --pretty=oneline
