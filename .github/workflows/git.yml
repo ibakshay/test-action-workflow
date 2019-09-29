@@ -8,6 +8,8 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: print the event name
+      env:
+        GITHUB_CONTEXT: ${{ toJson(github) }}
       run:  echo "$GITHUB_CONTEXT"
     - name: rebase release branch from master
       env:
