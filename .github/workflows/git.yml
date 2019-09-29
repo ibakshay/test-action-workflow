@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: print the event name
-      run: echo "$GITHUB_EVENT"
+      run: echo "$github.event"
     - name: rebase release branch from master
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
