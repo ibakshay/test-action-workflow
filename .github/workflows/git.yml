@@ -6,6 +6,8 @@ jobs:
   git:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v1
+    - name: Use Node version 12.6
     - name: rebase release branch from master
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
