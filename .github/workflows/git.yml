@@ -14,6 +14,7 @@ jobs:
         git config user.name "$GITHUB_ACTOR"
         git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
         git remote add origin "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
+        git remote set-url origin git@github.com:ibakshay/test-action-workflow.git
         git checkout release
         git rebase $GITHUB_SHA
         git push 
