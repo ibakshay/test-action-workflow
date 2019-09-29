@@ -15,3 +15,4 @@ jobs:
         git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
         git remote add github "https://$GITHUB_ACTOR:$GITHUB_TOKEN@github.com/$GITHUB_REPOSITORY.git"
         git checkout release
+        git rebase master
