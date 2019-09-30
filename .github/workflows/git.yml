@@ -10,9 +10,8 @@ jobs:
     - name: print the event name
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
-      run: |
-      echo "${GITHUB_REF:11}"
-      echo "${{ github.actor }}"
+      run: echo "${{ github.actor }}"
+
     - name: rebase release branch from master
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
