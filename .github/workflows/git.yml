@@ -16,6 +16,9 @@ jobs:
     - name: test the startwith
       if: startsWith(github.ref, 'refs/tags')
       run: echo akshay
+    - name: test for PR
+      if: github.ref == 'refs/heads/master'
+      run: echo becky
     - name: print the event name
       env:
         GITHUB_CONTEXT: ${{ toJson(github) }}
