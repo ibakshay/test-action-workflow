@@ -11,7 +11,7 @@ jobs:
     #- uses: actions/checkout@v1 
     - name: "CLA Assistant"
       #if: github.event.action == 'opened' || github.event.action == 'synchronize'
-      uses: ibakshay/action-template@dev-release
+      uses: ibakshay/action-template@releases/v1 
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
