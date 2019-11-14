@@ -2,14 +2,13 @@
 name: "CLA Assistant"
 on:
   pull_request:
-    types: [opened,synchronize,closed]
+    types: [opened,synchronize]
     
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
-      if: github.event.action == 'opened' || github.event.action == 'synchronize'
       uses: ibakshay/action-template@releases/v2
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
