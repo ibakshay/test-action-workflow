@@ -1,2 +1,2 @@
 # test-action-workflow
-test..
+test.. test 2
