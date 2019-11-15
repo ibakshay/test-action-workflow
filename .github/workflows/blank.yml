@@ -15,5 +15,5 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-    - run: 'echo "field: ${{ github.event.client_payload.foo }}"'
-    - run: 'echo "payload: ${{ toJson(github.event.client_payload) }}"'
+    - run: 'echo "field: ${{ github}}"'
+    - run: 'echo "payload: ${{ toJson(github) }}"'
