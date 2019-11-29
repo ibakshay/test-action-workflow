@@ -13,6 +13,8 @@ jobs:
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
+        ACTIONS_RUNNER_DEBUG: true
+        ACTIONS_STEP_DEBUG: true
       with: 
         pathToClaSignatures: 'signatures/cla.json'
         pathToCLADocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
