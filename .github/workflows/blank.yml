@@ -1,6 +1,8 @@
 name: CI
 
-on: issues
+on:
+  issue_comment:
+    types: [created, deleted]
 
 jobs:
   build:
