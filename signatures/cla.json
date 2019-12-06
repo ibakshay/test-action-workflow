@@ -1,20 +1,5 @@
 {
   "signedContributors": [
-    {
-      "name": "ibakshay",
-      "id": 33329946,
-      "comment_id": 562775757,
-      "created_at": "2019-12-06T23:11:16Z",
-      "updated_at": "2019-12-06T23:11:16Z",
-      "pullRequestNo": 184
-    },
-    {
-      "name": "akshayib",
-      "id": 51237873,
-      "comment_id": 562776588,
-      "created_at": "2019-12-06T23:14:05Z",
-      "updated_at": "2019-12-06T23:14:05Z",
-      "pullRequestNo": 184
-    }
+
   ]
 }
