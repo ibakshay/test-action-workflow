@@ -2,14 +2,14 @@
 name: "CLA Assistant"
 on:
   pull_request:
-    types: [opened,synchronize]
+    types: [opened,synchronize,closed]
     
 jobs:
   CLAssistant:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
-      uses: ibakshay/action-template@releases/v2
+      uses: ibakshay/action-template@releases/v10
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
