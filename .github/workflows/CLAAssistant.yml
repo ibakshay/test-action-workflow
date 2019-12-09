@@ -1,8 +1,6 @@
 
 name: "CLA Assistant"
 on:
-  pull_request:
-    types: [opened,synchronize,closed]
   issue_comment:
     types: [opened]
     
@@ -13,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
-      if: github.event.comment.body == 'checkcla' || github.event_name == 'pull_request'
+      if: github.event.comment.body == 'checkcla' 
       uses: ibakshay/action-template@releases/v11
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
