@@ -21,7 +21,7 @@ jobs:
     - run: 'echo "field: ${{ github}}"'
     - run: 'echo "payload: ${{ toJson(github) }}"'
     - name: check comment creation
-      uses: ibakshay/commentcreator@master
+      uses: ibakshay/commentcreator@releases/v1
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
