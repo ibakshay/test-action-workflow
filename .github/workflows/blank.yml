@@ -20,3 +20,9 @@ jobs:
         echo test, and deploy your project.
     - run: 'echo "field: ${{ github}}"'
     - run: 'echo "payload: ${{ toJson(github) }}"'
+    - name: check comment creation
+      uses: ibakshay/commentcreator@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with: 
+        message: 'Thank you very much. Please fork this repository and raise the PR when ready'
