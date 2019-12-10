@@ -16,4 +16,4 @@ jobs:
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        message: 'Thank you '
+        message: 'Thank you very much. Please fork this repository and raise the PR when ready '
