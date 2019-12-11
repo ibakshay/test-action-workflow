@@ -2,7 +2,7 @@ name: Handle Issue Comment
 
 on:
   issue_comment:
-    types: [created]
+    types: [deleted]
 
 jobs:
   build:
