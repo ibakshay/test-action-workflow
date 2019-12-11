@@ -6,13 +6,14 @@ on:
 
 jobs:
   build:
+    if: github.event.comment.body == 'I want to solve this issue'
 
     runs-on: ubuntu-latest
 
     steps:
     - name: Post Issue comment
       uses: ibakshay/commentcreator@releases/v1
-      if: github.event.comment.body == 'I want to solve this issue'
+
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
