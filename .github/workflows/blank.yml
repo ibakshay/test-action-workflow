@@ -6,6 +6,8 @@ on:
 
 jobs:
   build:
+    env:
+      akshay: true
 
     runs-on: ubuntu-latest
 
@@ -19,8 +21,9 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - run: 'echo "field: ${{ github}}"'
-    - run: echo Hello world $FIRST_NAME
-        echo "::set-env name=GRADLE_VERSION::4.10.3"
+    - run: echo Hello world FIRST_NAME
+      if: ${akshay} 
+        echo hahahaaha
     - run: 'echo "payload: ${{ toJson(github) }}"'
    # - name: check comment creation
     #  uses: ibakshay/commentcreator@releases/v1
