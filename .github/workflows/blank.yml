@@ -20,6 +20,7 @@ jobs:
         echo test, and deploy your project.
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world $FIRST_NAME
+      if: $FIRST_NAME == lkjhgfdsjhgfd
       env:
         FIRST_NAME: lkjhgfdsjhgfd  
     - run: 'echo "payload: ${{ toJson(github) }}"'
