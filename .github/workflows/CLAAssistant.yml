@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
-      #if: (github.event.comment.body == 'checkcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
+      #if: (github.event.comment.body == 'checkcla' || contains(github.event.comment.body, claSignatureText) github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
       uses: ibakshay/action-template@releases/v13
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -21,4 +21,5 @@ jobs:
         pathToClaSignatures: 'signatures/cla.json'
         pathToCLADocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
+        claSignatureText: 'Hereby I accept the CLA.'
 
