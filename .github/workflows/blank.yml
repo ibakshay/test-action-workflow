@@ -19,6 +19,9 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
     - run: 'echo "field: ${{ github}}"'
+    - run: echo Hello world $FIRST_NAME
+      env:
+        FIRST_NAME: lkjhgfdsjhgfd  
     - run: 'echo "payload: ${{ toJson(github) }}"'
    # - name: check comment creation
     #  uses: ibakshay/commentcreator@releases/v1
