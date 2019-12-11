@@ -1,0 +1,20 @@
+name: Handle Issue Comment
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  build:
+    
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Post Issue comment
+      uses: SusannedVBM/commentcreator@releases/v1
+
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        message: 'Thank you very much. Please fork this repository and raise the PR when ready '
