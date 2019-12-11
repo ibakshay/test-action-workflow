@@ -7,7 +7,7 @@ on:
 jobs:
   build:
     env:
-      akshay: true
+      akshay: sfsdfsdfsdgsdfgs
 
     runs-on: ubuntu-latest
 
@@ -22,8 +22,8 @@ jobs:
         echo test, and deploy your project.
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
-      if: ${akshay} 
-        echo hahahaaha
+
+        echo ${akshay} 
     - run: 'echo "payload: ${{ toJson(github) }}"'
    # - name: check comment creation
     #  uses: ibakshay/commentcreator@releases/v1
