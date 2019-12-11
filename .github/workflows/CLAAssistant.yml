@@ -8,6 +8,7 @@ on:
     
 jobs:
   CLAssistant:
+    if: contains(github.event.comment.html_url, '/pull/')
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
