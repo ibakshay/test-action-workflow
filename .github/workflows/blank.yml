@@ -1,28 +1,28 @@
 name: CI
 
-on:
-  issue_comment:
-    types: [created, deleted]
+# on:
+#   issue_comment:
+#     types: [created, deleted]
 
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
-      run: echo Hello, world!
-    - name: Run a multi-line script
-      if: github.event.comment.body == 'OK to test'
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
-    - run: 'echo "field: ${{ github}}"'
-    - run: 'echo "payload: ${{ toJson(github) }}"'
-   # - name: check comment creation
-    #  uses: ibakshay/commentcreator@releases/v1
-     # env:
-      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #with: 
-       # message: 'Thank you very much. Please fork this repository and raise the PR when ready'
+#     steps:
+#     - uses: actions/checkout@v1
+#     - name: Run a one-line script
+#       run: echo Hello, world!
+#     - name: Run a multi-line script
+#       if: github.event.comment.body == 'OK to test'
+#       run: |
+#         echo Add other actions to build,
+#         echo test, and deploy your project.
+#     - run: 'echo "field: ${{ github}}"'
+#     - run: 'echo "payload: ${{ toJson(github) }}"'
+#    # - name: check comment creation
+#     #  uses: ibakshay/commentcreator@releases/v1
+#      # env:
+#       #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#       #with: 
+#        # message: 'Thank you very much. Please fork this repository and raise the PR when ready'
