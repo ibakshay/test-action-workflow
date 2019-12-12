@@ -20,9 +20,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        echo "::set-env name=VARIABLE::2"
+        echo "::set-env name=VARIABLE::yellow"
     - name: test environmental variable
-      if: env.VARIABLE == 2 
+      if: env.VARIABLE == yellow 
       run: echo hello world
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
