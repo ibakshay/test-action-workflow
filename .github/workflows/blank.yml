@@ -18,8 +18,6 @@ jobs:
     - name: Run a multi-line script
      # if: github.event.comment.body == 'OK to test'
       run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
         echo "::set-env name=akshay::checkcla"
          echo "::set-env name=becky::I hereby sign the CLA"
     - name: test environmental variable
@@ -28,9 +26,9 @@ jobs:
         echo akshay is a good boy
         echo ${env.becky}
     - run: 'echo "field: ${{ github}}"'
-    - run: echo Hello world FIRST_NAME
-
-        echo ${akshay} 
+    - run: |
+        echo hisdasdfdsf
+        echo ${akshay}  wohoooo
     - run: 'echo "payload: ${{ toJson(github) }}"'
    # - name: check comment creation
     #  uses: ibakshay/commentcreator@releases/v1
