@@ -17,9 +17,10 @@ jobs:
       run: echo Hello, world!
     - name: Run a multi-line script
      # if: github.event.comment.body == 'OK to test'
+     # https://help.github.com/en/actions/automating-your-workflow-with-github-actions/development-tools-for-github-actions#set-an-environment-variable-set-env
       run: |
         echo "::set-env name=akshay::checkcla"
-         echo "::set-env name=becky::I hereby sign the CLA"
+        echo "::set-env name=becky::I hereby sign the CLA"
     - name: test environmental variable
       if: env.akshay == github.event.comment.body 
       run: | 
@@ -30,9 +31,4 @@ jobs:
         echo hisdasdfdsf
         echo ${akshay}  wohoooo
     - run: 'echo "payload: ${{ toJson(github) }}"'
-   # - name: check comment creation
-    #  uses: ibakshay/commentcreator@releases/v1
-     # env:
-      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #with: 
-       # message: 'Thank you very much. Please fork this repository and raise the PR when ready'
+
