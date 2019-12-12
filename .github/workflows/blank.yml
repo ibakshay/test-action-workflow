@@ -21,9 +21,12 @@ jobs:
         echo Add other actions to build,
         echo test, and deploy your project.
         echo "::set-env name=akshay::checkcla"
+         echo "::set-env name=becky::I hereby sign the CLA"
     - name: test environmental variable
       if: env.akshay == github.event.comment.body 
-      run: echo akshay is a good boy
+      run: | 
+        echo akshay is a good boy
+        echo ${env.becky}
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
 
