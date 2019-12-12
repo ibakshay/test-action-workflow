@@ -23,7 +23,7 @@ jobs:
         echo "::set-env name=akshay::checkcla"
     - name: test environmental variable
       if: env.akshay == github.event.comment.body 
-      run: echo hello world
+      run: echo akshay is a good boy
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
 
