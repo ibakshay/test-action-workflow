@@ -24,7 +24,7 @@ jobs:
       if: env.akshay == github.event.comment.body 
       run: | 
         echo akshay is a good boy
-        echo ${env.becky}
+        echo ${{env.becky}}
     - run: 'echo "field: ${{ github}}"'
     - run: |
         echo hisdasdfdsf
