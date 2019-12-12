@@ -2,7 +2,7 @@ name: CI
 
 on:
   issue_comment:
-    types: [deleted]
+    types: [deleted, created]
 
 jobs:
   build:
@@ -20,9 +20,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        echo "::set-env name=akshay::I have signed the CLA"
+        echo "::set-env name=akshay::checkcla"
     - name: test environmental variable
-      if: env.akshay == 'I have signed the CLA' 
+      if: env.akshay == github.event.comment.body 
       run: echo hello world
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
