@@ -20,9 +20,9 @@ jobs:
       run: |
         echo Add other actions to build,
         echo test, and deploy your project.
-        echo "::set-env name=VARIABLE::yellow"
+        echo "::set-env name=akshay::I have signed the CLA"
     - name: test environmental variable
-      if: env.VARIABLE == 'yellow' 
+      if: env.akshay == 'I have signed the CLA' 
       run: echo hello world
     - run: 'echo "field: ${{ github}}"'
     - run: echo Hello world FIRST_NAME
