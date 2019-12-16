@@ -22,5 +22,5 @@ jobs:
         path-to-signatures: 'signatures/cla.json'
         path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
-        blockchain-webhook-endpoint: 'https://u9afh6n36g.execute-api.eu-central-1.amazonaws.com/dev'
+        blockchain-webhook-endpoint: 'https://u9afh6n36g.execute-api.eu-central-1.amazonaws.com/dev/webhook'
 
