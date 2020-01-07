@@ -20,7 +20,7 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         pat: ${{ secrets.pat }}
       with: 
-        path-to-signatures: 'signatures/cla.json'
+        path-to-signatures: 'signatures/v1/cla.json'
         path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
         blockchain-storage-flag: true
