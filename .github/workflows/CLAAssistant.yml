@@ -15,14 +15,14 @@ jobs:
     steps:
     - name: "CLA Assistant"
       if: (github.event.comment.body == 'checkcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
-      uses: ibakshay/action-template@releases/v13
+      uses: ibakshay/github-action-1@master
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }} 
-        signature: checkcla  
+        pat: ${{ secrets.pat }}
       with: 
-        pathToClaSignatures: 'signatures/cla.json'
-        pathToCLADocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
+        path-to-signatures: 'signatures/v1/cla.json'
+        path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
-        claSignatureText: 'Hereby I accept the CLA.'
+        blockchain-storage-flag: true
+        blockchain-webhook-endpoint: 'https://u9afh6n36g.execute-api.eu-central-1.amazonaws.com/dev/webhook'
 
