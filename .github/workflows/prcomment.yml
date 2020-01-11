@@ -2,7 +2,7 @@ name: Handle Issue Comment
 
 on:
   pull_request:
-    types: [closed]
+    types: [closed ]
 
 jobs:
   build:
@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - name: Post Issue comment
-      uses: SusannedVBM/commentcreator@releases/v1
+      uses: cla-assistant-akshayib/commentcreator@master
 
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
