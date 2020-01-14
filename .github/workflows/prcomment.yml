@@ -1,4 +1,4 @@
-name: Handle Issue Comment
+name: Test Workflow
 
 on:
   pull_request:
