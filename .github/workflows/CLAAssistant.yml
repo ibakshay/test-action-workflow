@@ -1,4 +1,3 @@
-
 name: "CLA Assistant"
 on:
   issue_comment:
@@ -8,21 +7,15 @@ on:
     
 jobs:
   CLAssistant:
-      
-
-   # if: (github.event.comment.body == 'checkcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
-      if: (github.event.comment.body == 'checkcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
+      if: (github.event.comment.body == 'recheckcla' || github.event.comment.body == 'I have read the CLA Document and I hereby sign the CLA') || github.event_name == 'pull_request'
       uses: cla-assistant/github-action@master
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        pat: ${{ secrets.pat }}
       with: 
         path-to-signatures: 'signatures/version1/cla.json'
         path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
-        blockchain-storage-flag: true
-        empty-commit-flag: true   
-
+        blockchain-storage-flag: false
