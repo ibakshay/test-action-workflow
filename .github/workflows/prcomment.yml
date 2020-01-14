@@ -2,7 +2,7 @@ name: Handle Issue Comment
 
 on:
   pull_request:
-    types: [created ]
+    types: [created, synchronize ]
 
 jobs:
   build:
