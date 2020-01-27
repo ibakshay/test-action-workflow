@@ -20,3 +20,4 @@ jobs:
         path-To-cladocument: 'https://github.com/ibakshay/test-action-workflow/blob/master/cla.md'
         branch: 'master'
         blockchain-storage-flag: false
+        empty-commit-flag: false
