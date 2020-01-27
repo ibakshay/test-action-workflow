@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push
+
+jobs:
+  build:
+    env:
+      akshay: sfsdfsdfsdgsdfgs
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo ${{ github.sha}}
+
+    - run: 'echo "field: ${{ github}}"'
+    - run: |
+        echo hisdasdfdsf
+        echo ${akshay}  wohoooo
+    - run: 'echo "payload: ${{ toJson(github) }}"'
+

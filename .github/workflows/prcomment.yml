@@ -1,8 +1,8 @@
-name: Handle Issue Comment
+name: Test Workflow
 
 on:
   pull_request:
-    types: [closed ]
+    types: [opened,synchronize ]
 
 jobs:
   build:
