@@ -1,20 +1,5 @@
 {
   "signedContributors": [
-    {
-      "name": "akshayib",
-      "id": 51237873,
-      "comment_id": 578654986,
-      "created_at": "2020-01-27T09:10:52Z",
-      "repoId": 205160468,
-      "pullRequestNo": 278
-    },
-    {
-      "name": "ibakshay",
-      "id": 33329946,
-      "comment_id": 578662116,
-      "created_at": "2020-01-27T09:29:36Z",
-      "repoId": 205160468,
-      "pullRequestNo": 278
-    }
+
   ]
 }
