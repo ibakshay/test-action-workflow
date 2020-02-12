@@ -21,4 +21,4 @@ jobs:
         branch: 'master'
         blockchain-storage-flag: true
         empty-commit-flag: false
-        whitelist: 'Becky,IBAKSHAY,Anton,Becky'  
+        whitelist: 'Becky,Anton,Becky'  
