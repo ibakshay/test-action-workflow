@@ -1,8 +1,8 @@
 name: Test Workflow
 
 on:
-  pull_request:
-    types: [opened,synchronize ]
+  issue_comment:
+    types: [deleted]
 
 jobs:
   build:
