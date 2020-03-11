@@ -1,4 +1,4 @@
-name: "CLA Assistant"
+name: "CLA GitHub Action Bot"
 on:
   issue_comment:
     types: [created]
