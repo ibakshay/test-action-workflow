@@ -6,7 +6,7 @@ on:
     types: [opened,closed,synchronize]
     
 jobs:
-  CLA assistant lite:
+  CLAassistant:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
