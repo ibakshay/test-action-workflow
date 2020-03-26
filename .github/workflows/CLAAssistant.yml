@@ -1,4 +1,4 @@
-name: "CLA GitHub Action Bot"
+name: "CLA assistant lite bot"
 on:
   issue_comment:
     types: [created]
@@ -6,7 +6,7 @@ on:
     types: [opened,closed,synchronize]
     
 jobs:
-  CLAssistant:
+  CLA assistant lite:
     runs-on: ubuntu-latest
     steps:
     - name: "CLA Assistant"
