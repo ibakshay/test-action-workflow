@@ -17,7 +17,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with: 
-        path-to-signatures: '.github/signatures/version4/cla.json'
+        path-to-signatures: '.github/signatures/version1/cla.json'
         path-To-cladocument: 'https://github.com/Flank/flank/blob/master/cla.md'
         branch: 'master'
         whitelist: user1,user2,bot*
